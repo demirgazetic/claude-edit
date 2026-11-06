@@ -1,0 +1,54 @@
+{
+  "name": "claude-edit",
+  "version": "0.1.0",
+  "description": "Edit with Claude: click any element on a page in your dev server and ask Claude Code to change it. For Astro, any Vite project, or a plain HTML folder.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/demirgazetic/claude-edit.git"
+  },
+  "keywords": [
+    "claude",
+    "claude-code",
+    "astro",
+    "vite",
+    "cms",
+    "editor",
+    "dev-toolbar"
+  ],
+  "type": "module",
+  "bin": {
+    "claude-edit": "./cli.mjs"
+  },
+  "exports": {
+    ".": "./index.mjs",
+    "./vite": "./vite.mjs",
+    "./images.mjs": "./images.mjs",
+    "./pages.mjs": "./pages.mjs"
+  },
+  "files": [
+    "*.mjs",
+    "*.js",
+    "README.md"
+  ],
+  "scripts": {
+    "test": "node --test 'test/*.test.mjs'"
+  },
+  "peerDependencies": {
+    "astro": ">=7"
+  },
+  "peerDependenciesMeta": {
+    "astro": {
+      "optional": true
+    }
+  },
+  "dependencies": {
+    "dictionary-en": "4.0.0",
+    "dictionary-en-gb": "3.0.0",
+    "dictionary-hr": "2.0.0",
+    "dictionary-sr-latn": "4.0.0",
+    "hunspell-wasm": "0.3.0",
+    "modern-screenshot": "4.7.0",
+    "vite": "8.3.5"
+  }
+}
